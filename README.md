@@ -41,3 +41,5 @@ If there are no merge conflicts, then submit the pull request and we will get ba
 ## Best practices:
 
 ## Troubleshooting:
+
+# Mauipedia FAQs:
