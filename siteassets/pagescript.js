@@ -15,6 +15,5 @@ function requestCommitDate(pagename){
 }
 function sideBarnavBar(){
   $("#navBar").load("../siteassets/nav.html");
-  $("#navBar").html('<button class = "navbutton" id = "sidebar_button">sidebar</button>"');
-  $("#sidebar").html("this is the sidebar");
+  $("#sidebar").load("../siteassets/sidebar.html");
 }
