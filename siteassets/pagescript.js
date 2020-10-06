@@ -13,6 +13,7 @@ function requestCommitDate(pagename){
   /*curl -s "https://api.github.com/repos/TheGiraffe/Mauipedia/commits?path=contribute/defaultpagetemplate.html&page=1&per_page=1"|\jq -r '.[0].commit.committer.date' */
 }
 function sideBarnavBar(){
-  $("#nav").load("../siteassets/navbar.html");
+  $("#navBar").load("../siteassets/nav.html");
+  $("#navBar").html('<button class = "navbutton" id = "sidebar_button">sidebar</button>"');
   $("#sidebar").html("this is the sidebar");
 }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id = "sidebar_button"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+<span style="vertical-align:middle;font-size:2em;margin:0.5em">Welcome to Mauipedia</span>
+<button class = "navbutton" id = "homepage_button">homepage</button>
+<button class = "navbutton" id = "about_button">about</button>
+<button class = "navbutton" id = "contribute_button">contribute</button>
+<button class = "navbutton" id = "contact_button">contact</button>
+<script>
+$("#sidebar").show();
+sidebarVis = true;
+$("#sidebar_button").click(function(){
+  if(sidebarVis == true){
+    $("#sidebar").css("left","-20%");
+    $("#sidebar").fadeOut();
+    sidebarVis = false;
+    $("#page-content").css("width","98%");
+  }else{
+    $("#sidebar").css("left","0%");
+    $("#sidebar").fadeIn();
+    sidebarVis = true;
+    $("#page-content").css("width","78%");
+  }
+});
+</script>

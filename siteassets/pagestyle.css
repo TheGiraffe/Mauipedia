@@ -5,14 +5,39 @@ padding: 0;
 margin:0;
 font-size: 1vw;
 }
-#nav{
+#navBar{
   display: inline-block;
   top:0;
   left: 0;
   width: 100%;
-  padding: 1em;
-  background-color: green;
+  padding: 0.5em;
+  background-color: #00b368;
   box-sizing: border-box;
+  vertical-align: middle;
+}
+.navbutton{
+  color: black;
+  background-color:transparent;
+  padding: 0.25em 1em;
+  cursor: pointer;
+  border:none;
+  font-family: 'Epilogue', sans-serif;
+  vertical-align: bottom;
+}
+.navbutton:hover{
+  color:black;
+  background-color: #00e887;
+}
+#sidebar_button{
+  fill:black;
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+  margin-left: 0.25em;
+}
+#sidebar_button:hover{
+  fill:#00e887;
+  cursor: pointer;
 }
 #sidebar{
   display: block;
@@ -20,8 +45,9 @@ font-size: 1vw;
   box-sizing: border-box;
   height: 100%;
   width: 20%;
+  left: 0;
   padding: 1em;
-  background-color: orange;
+  background-color: #81d4b1;
 }
 #content-area{
   display: block;
