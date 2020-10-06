@@ -2,8 +2,29 @@
 <html>
   <head>
     <title>Entry Title</title>
+    <link rel="stylesheet" type="text/css" href="../siteassets/pagestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../siteassets/requestDate.js"></script>
   </head>
   <body>
-    page content here
+  <div id = "nav">a</div>
+  <div id = "content-area">
+  <div id = "sidebar"></div>
+  <div id = "page-content">
+  <h1>Page Title</h1>
+  <div>Last Updated: <span id="lastUpdated"></span></div>
+  <hr>
+  abc
+</div>
+  </div>
+
+<!--Scripts -->
+<script>
+var path = window.location.pathname;
+var pageName = path.split("/").pop();
+console.log( pageName );
+requestCommitDate(pageName);
+</script>
   </body>
 </html>

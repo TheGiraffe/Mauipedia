@@ -1,0 +1,40 @@
+body{
+font-family: 'Roboto', sans-serif;
+width: 100%;
+padding: 0;
+margin:0;
+font-size: 1vw;
+}
+#nav{
+  display: inline-block;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  background-color: green;
+  box-sizing: border-box;
+}
+#sidebar{
+  display: block;
+  position: fixed;
+  box-sizing: border-box;
+  height: 100%;
+  width: 20%;
+  padding: 1em;
+  background-color: orange;
+}
+#content-area{
+  display: block;
+  position: relative;
+}
+#page-content{
+  display: inline-block;
+  position: absolute;
+  width:78%;
+  height:98%;
+  right:0;
+  padding:1%;
+}
+h1{
+font-family: 'Epilogue', sans-serif;
+}
