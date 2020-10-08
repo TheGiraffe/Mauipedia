@@ -4,6 +4,7 @@ width: 100%;
 padding: 0;
 margin:0;
 font-size: 1vw;
+height: 100%;
 }
 #navBar{
   display: inline-block;
@@ -23,10 +24,13 @@ font-size: 1vw;
   border:none;
   font-family: 'Epilogue', sans-serif;
   vertical-align: bottom;
+  transition: 0.25s;
 }
 .navbutton:hover{
   color:black;
   background-color: #00e887;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 #sidebar_button{
   fill:black;
@@ -34,6 +38,7 @@ font-size: 1vw;
   width: 2em;
   vertical-align: middle;
   margin-left: 0.25em;
+  transition: 0.25s;
 }
 #sidebar_button:hover{
   fill:#00e887;
@@ -58,7 +63,9 @@ font-size: 1vw;
 }
 #content-area{
   display: block;
-  position: relative;
+  position: absolute;
+  height: 92%;
+  width: 100%;
 }
 #page-content{
   display: inline-block;
@@ -67,7 +74,19 @@ font-size: 1vw;
   height:98%;
   right:0;
   padding:1%;
+  overflow-y: scroll;
 }
 h1{
 font-family: 'Epilogue', sans-serif;
+}
+#feature_box{
+display:block;position:relative;border:thin solid;width:25%;padding:1em;margin-left:1%;margin-bottom:1%;float:right;text-align:center;
+
+}
+.details_header{
+  background-color:#81d4b1;padding:0.2em;margin-bottom:0.25em;font-size:1.1em;
+}
+.detail_name{
+  font-weight:bold;
+  color:#00b368;
 }
