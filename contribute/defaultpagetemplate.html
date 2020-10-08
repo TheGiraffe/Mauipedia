@@ -3,6 +3,7 @@
 <title>Entry Title | Mauipedia</title>
 
  <meta http-equiv="Cache-Control" content="no-store" /><link rel="icon" type="image/png" href="../siteassets/favicon.png"/><link rel="stylesheet" type="text/css" href="../siteassets/pagestyle.css"><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="../siteassets/pagescript.js"></script>
+ <link rel="stylesheet" type="text/css" href="../siteassets/foundation-icons/foundation-icons.css">
 </head><body><div id = "navBar"></div><div id = "content-area"><div id = "sidebar"></div>
 
 <div id = "page-content">
@@ -24,11 +25,23 @@
 </div>
 <div style="display:block;position:relative">
 <h1 id = "pagetitle">Page Title</h1>
-<div>Last Updated: <span id="lastUpdated"></span></div> <!--Do not change this, it auto updates based off github commits-->
+<div>Last Updated: <span id="lastUpdated"></span></div>
 <hr></div>
-<p style="display:block">Start typing content here</p>
+<div style="display:block" id = "page_text">
 
-</div><div style="display:block;font-size:0.75em;color:gray;position:absolute;bottom:0em;right:3em"><center>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike License</a></center></div></div>
+</div>
+<div style="display:inline-block;font-size:0.75em;color:gray;position:relative;padding:0.25em;background-color:white;border:thin solid;margin-top:1em;"><center>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike License</a></center></div>
+</div></div>
 
-<!--Scripts --><script>var path = window.location.pathname;var pageName = path.split("/").pop();console.log( pageName );requestCommitDate(pageName);sideBarnavBar();</script>
+<!--Scripts --><script>
+var path = window.location.pathname;
+var pageName = path.split("/").pop();
+console.log( pageName );
+requestCommitDate(pageName);
+sideBarnavBar();
+
+var page = pageName.split(".html").shift();
+$("#page_text").load("../en/page-texts/"+page+".txt");
+
+</script>
 </body></html>

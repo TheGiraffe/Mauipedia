@@ -90,3 +90,13 @@ display:block;position:relative;border:thin solid;width:25%;padding:1em;margin-l
   font-weight:bold;
   color:#00b368;
 }
+.socialicons{
+  float:right;
+  font-size:1.5em;
+  color:black;
+  margin-right:0.5em;
+}
+.socialicons:hover{
+  color:#00e887;
+  transition: 0.25s;
+}
