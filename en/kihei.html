@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head>
+
+<title>Kihei | Mauipedia</title>
+
+ <meta http-equiv="Cache-Control" content="no-store" /><link rel="icon" type="image/png" href="../siteassets/favicon.png"/><link rel="stylesheet" type="text/css" href="../siteassets/pagestyle.css"><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="../siteassets/pagescript.js"></script>
+ <link rel="stylesheet" type="text/css" href="../siteassets/foundation-icons/foundation-icons.css">
+</head><body><div id = "navBar"></div><div id = "content-area"><div id = "sidebar"></div>
+
+<div id = "page-content">
+<div id="feature_box"><img src = "../siteassets/placeholder2.jpg" width=100% style="border:thin solid">
+<p style="font-size:0.75em;font-style:italic">Keawakapu Beach, Kihei, HI. Photo by Sophia Davis</p>
+<p style="font-family:'Epilogue',sans-serif;font-size:1.25em;font-weight:bold">Kihei</p>
+<p>
+<div class="details_header">Location Details</div>
+<div class="detail_name">Zip Code: 96753<span></span> Town: <span></span></div>
+<div class="detail_name">Moku: Kula, Honua'ula<span></span> <span></span></div>
+<div class="detail_name">Coordinates: 20&#176;45'33"N 156&#176;27'26"W<span></span></div>
+</p>
+<p>
+<div class="details_header">Links</div>
+<div class="detail_name">Website: <a href="https://www.gohawaii.com/islands/maui/regions/south-maui/Kihei">GoHawaii</a><span></span></div>
+</p>
+<div class="details_header">Page Categories</div><p></p>
+</div>
+<div style="display:block;position:relative">
+<h1 id = "pagetitle">Kihei</h1>
+<div>Last Updated: <span id="lastUpdated"></span></div>
+<hr></div>
+<div style="display:block" id = "page_text">
+
+</div>
+<div style="display:inline-block;font-size:0.75em;color:gray;position:relative;padding:0.25em;background-color:white;border:thin solid;margin-top:1em;"><center>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike License</a></center></div>
+</div></div>
+
+<!--Scripts --><script>
+var path = window.location.pathname;
+var pageName = path.split("/").pop();
+console.log( pageName );
+requestCommitDate(pageName);
+sideBarnavBar();
+
+var page = pageName.split(".html").shift();
+$("#page_text").load("../en/page-texts/"+page+".txt");
+
+</script>
+</body></html>
