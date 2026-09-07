@@ -1,7 +1,11 @@
 # Mauipedia
+Development paused indefinitely since Oct 2020.
+
 For Maui locals, to paint a picture of what Maui is now and what it was before. A time capsule, a repository, of local businesses and organizations still here and long gone, of what things used to look like, and of things dear to the hearts of the people of this island and of all generations.
 
-Webpage link: https://thegiraffe.github.io/Mauipedia/
+~~Webpage link: https://thegiraffe.github.io/Mauipedia/~~
+
+[Example page about Kihei](https://thegiraffe.github.io/Mauipedia/en/kihei.html)
 
 # How to contribute to Mauipedia
 Mahalo for wanting to help grow Mauipedia! If you would like to create new pages or update the information on pages, our preference is that you are from Maui or have ties to the island. However, anyone is welcome to recommend new pages or updates to pages using the ![](https://img.shields.io/badge/-update%20mauipedia%20page-%23b2f9a2) issue label and ![](https://img.shields.io/badge/-new%20mauipedia%20page-%23bfdadc) issue label! 
